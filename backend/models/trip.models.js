@@ -7,12 +7,12 @@ const trip = new Schema(
         destination: String,
 
         vehicle: {
-            type: ObjectId,
+            type: Schema.Types.ObjectId,
             ref: "Vehicle"
         },
 
         driver: {
-            type: ObjectId,
+            type: Schema.Types.ObjectId,
             ref: "Driver"
         },
 
@@ -45,7 +45,7 @@ const trip = new Schema(
         },
 
         createdBy: {
-            type: ObjectId,
+            type: Schema.Types.ObjectId,
             ref: "User"
         }
     }

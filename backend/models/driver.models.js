@@ -5,7 +5,7 @@ const driver = new Schema(
     {
 
         user: {
-            type: ObjectId,
+            type: Schema.Types.ObjectId,
             ref: "User",
             unique: true
         },

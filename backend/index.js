@@ -1,7 +1,7 @@
 import "dotenv/config"
 import express from "express";
 import cors from "cors"
-import connectDB from "./db/connectDB.db.js"
+import connectDB from "./db/connect.db.js"
 import cookieParser from "cookie-parser";
 
 const app = express()

@@ -6,7 +6,7 @@ import apiResponse from "../utils/apiResponse.utils.js"
 
 
 const createTrip = async (req, res) => {
-    const { source, destination, vehicleId, driverId, cargoWeight, plannedDistance, actualDistance, startOdometer, endOdometer, fuelConsumed, revenue }
+    const { source, destination, vehicleId, driverId, cargoWeight, plannedDistance, actualDistance, startOdometer, endOdometer, fuelConsumed, revenue } = req.body
 
     if (!driverId || !vehicleId || !destination || !source || !startOdometer) {
         throw new apiError(400, " these field are requried")
@@ -23,7 +23,7 @@ const createTrip = async (req, res) => {
         throw new apiError(500, " cargoweight is greateer them capacity of vehicle!")
     }
     const trip = await Trip.create({
-        source, destination, vehicle = vehicleId, driver: driverId, cargoWeight, plannedDistance, actualDistance, startOdometer, endOdometer, fuelConsumed, revenue, status: "Draft", createdBy: req.user.id
+        source, destination, vehicle: vehicleId, driver: driverId, cargoWeight, plannedDistance, actualDistance, startOdometer, endOdometer, fuelConsumed, revenue, status: "Draft", createdBy: req.user.id
     })
 
     return res 

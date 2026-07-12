@@ -43,7 +43,7 @@ const vehicle = new Schema(
         region: String,
 
         createdBy: {
-            type: ObjectId,
+            type:Schema.Types.ObjectId ,
             ref: "User"
         }
     }

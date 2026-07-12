@@ -3,7 +3,7 @@ import mongoose, { Schema } from "mongoose";
 const maintenance = new Schema(
     {
         vehicle: {
-            type: ObjectId,
+            type: Schema.Types.ObjectId,
             ref: "Vehicle"
         },
 
@@ -23,7 +23,7 @@ const maintenance = new Schema(
         },
 
         createdBy: {
-            type: ObjectId,
+            type: Schema.Types.ObjectId,
             ref: "User"
         },
 

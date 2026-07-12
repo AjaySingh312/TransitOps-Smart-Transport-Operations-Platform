@@ -3,12 +3,12 @@ import mongoose, {Schema} from "mongoose";
 const expense = new Schema(
     {
     vehicle:{
-        type:ObjectId,
+        type:Schema.Types.ObjectId,
         ref:"Vehicle"
     },
 
     trip:{
-        type:ObjectId,
+        type:Schema.Types.ObjectId,
         ref:"Trip"
     },
 
@@ -28,7 +28,7 @@ const expense = new Schema(
     date:Date,
 
     createdBy:{
-        type:ObjectId,
+        type:Schema.Types.ObjectId,
         ref:"User"
     }
 }
