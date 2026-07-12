@@ -1,7 +1,7 @@
-import { Plus } from "lucide-react";
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import DriversTable from "../components/DriversTable";
+import { Plus } from "lucide-react.jsx";
+import Sidebar from "../components/Sidebar.jsx";
+import Navbar from "../components/Navbar.jsx";
+import DriversTable from "../components/DriversTable.jsx";
 
 export default function Drivers() {
   return (

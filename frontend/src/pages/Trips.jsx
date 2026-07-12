@@ -1,8 +1,8 @@
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import TripLifecycle from "../components/TripLifecycle";
-import TripForm from "../components/TripForm";
-import LiveBoard from "../components/LiveBoard";
+import Sidebar from "../components/Sidebar.jsx";
+import Navbar from "../components/Navbar.jsx";
+import TripLifecycle from "../components/TripLifecycle.jsx";
+import TripForm from "../components/TripForm.jsx";
+import LiveBoard from "../components/LiveBoard.jsx";
 
 export default function Trips() {
   return (

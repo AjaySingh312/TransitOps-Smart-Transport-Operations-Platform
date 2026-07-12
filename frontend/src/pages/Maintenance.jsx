@@ -1,7 +1,7 @@
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import MaintenanceForm from "../components/MaintenanceForm";
-import ServiceLog from "../components/ServiceLog";
+import Sidebar from "../components/Sidebar.jsx";
+import Navbar from "../components/Navbar.jsx";
+import MaintenanceForm from "../components/MaintenanceForm.jsx";
+import ServiceLog from "../components/ServiceLog.jsx";
 
 export default function Maintenance() {
   return (

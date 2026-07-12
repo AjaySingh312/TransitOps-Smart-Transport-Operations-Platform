@@ -1,8 +1,8 @@
 import { Plus } from "lucide-react";
 
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import VehicleTable from "../components/VehicleTable";
+import Sidebar from "../components/Sidebar.jsx";
+import Navbar from "../components/Navbar.jsx";
+import VehicleTable from "../components/VehicleTable.jsx";
 
 export default function VehicleRegistry() {
   return (

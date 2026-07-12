@@ -1,8 +1,8 @@
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import AnalyticsCards from "../components/AnalyticsCards";
-import RevenueChart from "../components/RevenueChart";
-import CostliestVehicles from "../components/CostliestVehicles";
+import Sidebar from "../components/Sidebar.jsx";
+import Navbar from "../components/Navbar.jsx";
+import AnalyticsCards from "../components/AnalyticsCards.jsx";
+import RevenueChart from "../components/RevenueChart.jsx";
+import CostliestVehicles from "../components/CostliestVehicles.jsx";
 
 export default function Analytics() {
   return (
