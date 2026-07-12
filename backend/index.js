@@ -21,6 +21,10 @@ app.get("/", (req, res) => {
 import authRouter from "./routers/auth.routers.js"
 app.use("/api/v1/auth", authRouter)
 
+//vehicle
+import vehicleRouter from "./routers/vehicle.routers.js"
+app.use("/api/v1/vehicle", vehicleRouter)
+
 connectDB()
     .then(() => app.listen("3000", () => {
         console.log("server is started on http://localhost:3000")
