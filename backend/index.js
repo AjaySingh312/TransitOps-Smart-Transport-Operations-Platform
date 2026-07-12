@@ -24,6 +24,9 @@ app.use("/api/v1/auth", authRouter)
 //vehicle
 import vehicleRouter from "./routers/vehicle.routers.js"
 app.use("/api/v1/vehicle", vehicleRouter)
+//driver
+import driverRouter from "./routers/driver.routers.js"
+app.use("/api/v1/driver", driverRouter)
 
 connectDB()
     .then(() => app.listen("3000", () => {

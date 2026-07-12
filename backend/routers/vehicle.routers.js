@@ -7,8 +7,8 @@ const router = Router()
 router.post("/register-vehicle",verifyAT, asyncHandler(registerVehicle))
 router.get("/get-one-vehicle/:vehicleId",verifyAT, asyncHandler(getOneVehicle))
 router.get("/get-vehicles",verifyAT, asyncHandler(getOneVehicle))
-router.get("/update-vehicle",verifyAT, asyncHandler(updateVehicle))
-router.get("/retire-vehicle",verifyAT, asyncHandler(retireVehicle))
+router.patch("/update-vehicle",verifyAT, asyncHandler(updateVehicle))
+router.patch("/retire-vehicle",verifyAT, asyncHandler(retireVehicle))
 
 
 
