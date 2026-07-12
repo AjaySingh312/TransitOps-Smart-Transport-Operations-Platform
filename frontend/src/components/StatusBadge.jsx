@@ -4,11 +4,13 @@ export default function StatusBadge({ status }) {
     "On Trip": "bg-blue-500",
     "Off Duty": "bg-gray-500",
     Suspended: "bg-orange-500",
+    "In Shop": "bg-orange-500",
+    Completed: "bg-green-600",
   };
 
   return (
     <span
-      className={`px-3 py-1 rounded-md text-white text-sm font-medium ${colors[status]}`}
+      className={`px-3 py-1 rounded-md text-white text-sm ${colors[status]}`}
     >
       {status}
     </span>
