@@ -17,6 +17,11 @@ const menu = [
     icon: LayoutDashboard,
   },
   {
+  name: "Fuel & Expenses",
+  path: "/fuel-expenses",
+  icon: Fuel,
+},
+  {
     name: "Fleet",
     path: "/vehicles",
     icon: Truck,
