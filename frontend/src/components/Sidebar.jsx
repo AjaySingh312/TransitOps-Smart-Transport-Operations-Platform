@@ -22,6 +22,11 @@ const menu = [
   icon: Fuel,
 },
   {
+  name: "Analytics",
+  path: "/analytics",
+  icon: BarChart3,
+},
+  {
     name: "Fleet",
     path: "/vehicles",
     icon: Truck,
