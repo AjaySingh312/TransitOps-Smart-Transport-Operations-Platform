@@ -1,3 +1,17 @@
+import { NavLink } from "react-router-dom";
+
+<NavLink
+  to="/drivers"
+  className={({ isActive }) =>
+    `flex items-center gap-3 px-4 py-3 rounded-lg ${
+      isActive
+        ? "bg-yellow-100 text-yellow-700"
+        : "hover:bg-gray-100"
+    }`
+  }
+>
+  Drivers
+</NavLink>
 import {
   LayoutDashboard,
   Truck,
