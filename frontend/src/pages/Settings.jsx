@@ -1,7 +1,7 @@
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import SettingsForm from "../components/SettingsForm";
-import RBAC from "../components/RBAC";
+import Sidebar from "../components/Sidebar.jsx";
+import Navbar from "../components/Navbar.jsx";
+import SettingsForm from "../components/SettingsForm.jsx";
+import RBAC from "../components/RBAC.jsx";
 
 export default function Settings() {
   return (

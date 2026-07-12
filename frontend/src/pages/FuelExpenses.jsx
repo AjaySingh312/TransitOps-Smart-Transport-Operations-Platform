@@ -1,7 +1,7 @@
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import FuelLogs from "../components/FuelLogs";
-import ExpenseTable from "../components/ExpenseTable";
+import Sidebar from "../components/Sidebar.jsx";
+import Navbar from "../components/Navbar.jsx";
+import FuelLogs from "../components/FuelLogs.jsx";
+import ExpenseTable from "../components/ExpenseTable.jsx";
 
 export default function FuelExpenses() {
   return (
