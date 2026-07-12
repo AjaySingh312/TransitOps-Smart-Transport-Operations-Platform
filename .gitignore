@@ -141,3 +141,16 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code workspace settings (optional)
+.vscode/
+
+# If using uploads locally
+uploads/
+
+# Temporary files
+*.tmp
