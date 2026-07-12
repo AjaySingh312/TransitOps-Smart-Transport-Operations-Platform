@@ -1,9 +1,9 @@
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import FilterBar from "../components/FilterBar";
-import StatCard from "../components/StatCard";
-import TripsTable from "../components/TripsTable";
-import VehicleStatus from "../components/VehicleStatus";
+import Sidebar from "../components/Sidebar.jsx";
+import Navbar from "../components/Navbar.jsx";
+import FilterBar from "../components/FilterBar.jsx";
+import StatCard from "../components/StatCard.jsx";
+import TripsTable from "../components/TripsTable.jsx";
+import VehicleStatus from "../components/VehicleStatus.jsx";
 
 const stats = [
   {
