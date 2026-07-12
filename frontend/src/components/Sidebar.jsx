@@ -1,17 +1,4 @@
 import { NavLink } from "react-router-dom";
-
-<NavLink
-  to="/drivers"
-  className={({ isActive }) =>
-    `flex items-center gap-3 px-4 py-3 rounded-lg ${
-      isActive
-        ? "bg-yellow-100 text-yellow-700"
-        : "hover:bg-gray-100"
-    }`
-  }
->
-  Drivers
-</NavLink>
 import {
   LayoutDashboard,
   Truck,
@@ -20,54 +7,84 @@ import {
   Wrench,
   Fuel,
   BarChart3,
-  Settings
+  Settings,
 } from "lucide-react";
 
 const menu = [
-  {icon: LayoutDashboard, name:"Dashboard"},
-  {icon: Truck, name:"Fleet"},
-  {icon: Users, name:"Drivers"},
-  {icon: Route, name:"Trips"},
-  {icon: Wrench, name:"Maintenance"},
-  {icon: Fuel, name:"Fuel & Expenses"},
-  {icon: BarChart3, name:"Analytics"},
-  {icon: Settings, name:"Settings"},
+  {
+    name: "Dashboard",
+    path: "/dashboard",
+    icon: LayoutDashboard,
+  },
+  {
+    name: "Fleet",
+    path: "/vehicles",
+    icon: Truck,
+  },
+  {
+    name: "Drivers",
+    path: "/drivers",
+    icon: Users,
+  },
+  {
+    name: "Trips",
+    path: "/trips",
+    icon: Route,
+  },
+  {
+    name: "Maintenance",
+    path: "/maintenance",
+    icon: Wrench,
+  },
+  {
+    name: "Fuel & Expenses",
+    path: "/fuel-expenses",
+    icon: Fuel,
+  },
+  {
+    name: "Analytics",
+    path: "/analytics",
+    icon: BarChart3,
+  },
+  {
+    name: "Settings",
+    path: "/settings",
+    icon: Settings,
+  },
 ];
 
-export default function Sidebar(){
+export default function Sidebar() {
+  return (
+    <aside className="w-64 min-h-screen bg-white border-r shadow-sm">
+      {/* Logo */}
+      <div className="px-6 py-6 border-b">
+        <h1 className="text-2xl font-bold text-gray-800">
+          TransitOps
+        </h1>
+        <p className="text-xs text-gray-500 mt-1">
+          Smart Transport Platform
+        </p>
+      </div>
 
-    return(
-
-<div className="w-64 bg-white border-r">
-
-<div className="text-2xl font-bold p-6">
-TransitOps
-</div>
-
-<nav>
-
-{
-menu.map(({icon:Icon,name},i)=>(
-
-<button
-key={i}
-className={`w-full flex items-center gap-3 px-6 py-3 text-left hover:bg-yellow-100 ${
-i===0 && "bg-yellow-100 text-yellow-700"
-}`}
->
-
-<Icon size={18}/>
-{name}
-
-</button>
-
-))
-}
-
-</nav>
-
-</div>
-
-    )
-
+      {/* Navigation */}
+      <nav className="mt-5 px-3">
+        {menu.map(({ name, path, icon: Icon }) => (
+          <NavLink
+            key={name}
+            to={path}
+            className={({ isActive }) =>
+              `flex items-center gap-3 px-4 py-3 mb-2 rounded-lg transition-all duration-200 ${
+                isActive
+                  ? "bg-yellow-100 text-yellow-700 font-semibold"
+                  : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+              }`
+            }
+          >
+            <Icon size={18} />
+            <span>{name}</span>
+          </NavLink>
+        ))}
+      </nav>
+    </aside>
+  );
 }
